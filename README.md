@@ -1,58 +1,31 @@
-# Lab 6: Monitoring and Alerting with Prometheus and Grafana
+## Local Application URLs
 
-## Overview
+The following URLs can be used to access the Quick Commerce Delivery Monitoring application locally.
 
-This project demonstrates monitoring, metrics visualization, and alerting using Prometheus and Grafana as part of the DevOps lab exercises.
+| Service | URL | Purpose |
+|---|---|---|
+| Delivery Metrics | http://localhost:8000/metrics | View delivery metrics exported by the Python application |
+| Prometheus | http://localhost:9090 | Access the Prometheus monitoring interface |
+| Prometheus Targets | http://localhost:9090/targets | Check whether monitoring targets are UP or DOWN |
+| Prometheus Alerts | http://localhost:9090/alerts | View configured alert rules and their states |
+| Grafana | http://localhost:3000 | Access the Grafana monitoring dashboard |
 
-## Objectives
+### Grafana Dashboard
 
-* Set up Prometheus for metrics collection.
-* Configure Grafana as a monitoring dashboard.
-* Connect Grafana to Prometheus as a data source.
-* Create and save Grafana dashboards.
-* Configure monitoring and alerting rules.
+Dashboard name: **Quick Commerce Delivery Monitoring**
 
-## Tools and Technologies
+The dashboard displays the following metrics:
 
-* Docker
-* Prometheus
-* Grafana
-* YAML
-* PowerShell
-* Windows
+- Total Deliveries
+- Pending Deliveries
+- On-the-Way Deliveries
+- Average Delivery Time
 
-## Project Structure
+### How to Run Locally
 
-```text
-devops_lab6/
-├── app/
-├── prometheus/
-├── grafana/
-├── prometheus.yml
-├── alert_rules.yml
-└── README.md
-```
+1. Start the Python delivery metrics application.
+2. Start the Prometheus Docker container.
+3. Start the Grafana Docker container.
+4. Open the Grafana URL above and view the dashboard.
 
-## Implementation
-
-1. Created the project folders and configuration files.
-2. Configured Prometheus for metrics collection.
-3. Started the monitoring services using Docker.
-4. Connected Grafana to Prometheus.
-5. Created and saved Grafana dashboards.
-6. Configured monitoring and alerting rules.
-
-## Reference Links
-
-* **My GitHub Repository:** https://github.com/Khushicoder5/devops_lab6
-* **Prometheus Documentation:** https://prometheus.io/docs/introduction/overview/
-* **Grafana Documentation:** https://grafana.com/docs/grafana/latest/
-* **Docker Documentation:** https://docs.docker.com/
-
-## Outcome
-
-Gained practical experience in monitoring, metrics visualization, dashboard creation, and alerting using Prometheus and Grafana.
-
-## Author
-
-Khushicoder5
+**Note:** These URLs use `localhost`, so they work on the computer running the services. The services and their Docker containers must be running to access them.
