@@ -9,6 +9,7 @@ The following URLs can be used to access the Quick Commerce Delivery Monitoring 
 | Prometheus Targets | http://localhost:9090/targets | Check whether monitoring targets are UP or DOWN |
 | Prometheus Alerts | http://localhost:9090/alerts | View configured alert rules and their states |
 | Grafana | http://localhost:3000 | Access the Grafana monitoring dashboard |
+| Jenkins | http://localhost:8080 | Access the Jenkins CI/CD dashboard (when running) |
 
 ### Grafana Dashboard
 
